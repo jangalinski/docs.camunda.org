@@ -46,14 +46,17 @@ Next, you need to add the Javascript Library to the page.
 Or, with Angular JS Support:
 
 ```html
-<script src="angular.min.js"></script>
-<script src="camunda-bpm-sdk-angular.js"></script>
+<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="angular.min.js" type="text/javascript"></script>
+<script src="camunda-bpm-sdk-angular.js" type="text/javascript"></script>
 ```
 
 ## Bootstrapping the Forms SDK
 
-The form SDK utilize an instance of the CamSDK.Client to communicate with the engine 
-(over the REST API):
+### Creating a Client
+
+The Forms SDK utilize an instance of the `CamSDK.Client` to communicate with the process engine REST
+Api:
 
 ```javascript
 var camClient = new CamSDK.Client({
@@ -61,6 +64,9 @@ var camClient = new CamSDK.Client({
   apiUri: 'http://localhost:8080/engine-rest'
 });
 ```
+
+### Loading a form from URL
+
 Next, the camunda Form needs to be bootstrapped:
 
 ```javascript
@@ -85,6 +91,8 @@ new CamSDK.Form({
 
 In the above example, the form will be loaded from `/url/to/form.html`. The form content will be
 appended to the `containerElement`, selected using jQuery.
+
+### Using a form already in the DOM
 
 Alternatively, it is possible to initialize the Form SDK for a form already existing in the DOM:
 
