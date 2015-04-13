@@ -51,3 +51,22 @@ The `ACT_RU_EVENT_SUBSCR` table contains all currently existing event
 subscriptions.  It includes the type, name and configuration of the expected
 event along with information about the corresponding process instance and
 execution.
+
+
+## Entitiy Relationship Diagrams
+
+### Engine BPMN
+
+<center><img class="img-responsive" src="ref:asset:/guides/user-guide/assets/img/erd_engine_bpmn.svg"/></center>
+
+### Engine CMMN
+
+<center><img class="img-responsive" src="ref:asset:/guides/user-guide/assets/img/erd_engine_cmmn.svg"/></center>
+
+### History
+
+<center><img class="img-responsive" src="ref:asset:/guides/user-guide/assets/img/erd_history.svg"/></center>
+
+### Identity
+
+<center><img class="img-responsive" src="ref:asset:/guides/user-guide/assets/img/erd_identity.svg"/></center>
