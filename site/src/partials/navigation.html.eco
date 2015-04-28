@@ -64,6 +64,9 @@
               <li data-active-link="/api-references/connect">
                 <a href="<%= @docUrl("api-references/connect/") %>">Connector API</a>
               </li>
+              <li data-active-link="/api-references/process-engine-configuration-properties">
+                <a href="<%= @docUrl("api-references/process-engine-configuration-properties/") %>">Process Engine Configuration Properties</a>
+              </li>
             </ul>
         </li>
         <li class="dropdown" data-active-link="/real-life">
